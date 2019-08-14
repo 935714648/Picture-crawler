@@ -40,10 +40,11 @@ def start_one(url):
 def main(shuzi):
     url = 'http://sc.chinaz.com/tag_tupian/yazhoumeinv_' + str(shuzi)+'.html'
     start_one(url)
-    crear_File(save_path)
+    
 
 #进行翻页，与时间设定
 if __name__ == '__main__':
+    crear_File(save_path)
     for i in range(2,24):
         main(shuzi=i)
         time.sleep(1)
